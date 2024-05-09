@@ -1,0 +1,20 @@
+class shape{
+    void draw() {
+        System.out.println("Menggambar Bentuk");
+    }
+}
+
+class Circle extends shape {
+    void draw(){
+        System.out.println("Menggambar Lingkaran");
+    }
+}
+
+public class Main {
+    public static void main(String[] args){
+        Circle circle = new Circle();
+        circle.draw();
+        circle = null;
+        System.gc();
+    }
+}
